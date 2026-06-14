@@ -161,16 +161,21 @@ export function HomeClient({ featuredProject }: { featuredProject: any }) {
           <Crosshair className="absolute top-8 left-8" />
           <Crosshair className="absolute bottom-8 right-8" />
           
-          <div className="max-w-5xl relative z-10">
-            <span className="font-mono text-[var(--color-silver)] tracking-widest text-sm mb-8 block">[ 01 ] THE HOOK</span>
-            <h1 className="text-5xl md:text-8xl md:text-[7rem] leading-[0.9] mb-12 relative">
-              Most business websites are forgettable.<br />
-              <span className="text-[var(--color-silver)]">I build websites businesses remember.</span>
+          <div className="max-w-5xl relative z-10 mt-24">
+            <span className="font-mono text-[10px] font-normal tracking-[0.3em] uppercase text-[var(--color-silver)] mb-8 block">[ 01 ] THE HOOK</span>
+            <h1 className="text-[clamp(48px,8vw,96px)] font-black tracking-[-0.03em] uppercase font-cabinet leading-[0.9] mb-12 relative">
+              GOOD PRODUCTS<br />
+              LOSE TO BETTER-<br />
+              LOOKING ONES.<br />
+              <span className="text-[var(--color-silver)]">I BUILD THE<br />DIFFERENCE.</span>
               <Starburst className="absolute -top-12 -right-12 hidden md:block" />
             </h1>
+            <p className="font-geist text-[16px] text-[#666] max-w-lg mx-auto mb-12">
+              Frontend dev based in Bangalore. I work with founders and local businesses who are serious about how they show up online.
+            </p>
             <div className="flex justify-center mt-12">
               <MagneticButton onClick={() => lenis?.scrollTo('#contact')}>
-                <span className="flex items-center gap-2">Start a Project <ArrowUpRight className="w-5 h-5" /></span>
+                <span className="flex items-center gap-2">Start a Project <ArrowRight className="w-5 h-5" /></span>
               </MagneticButton>
             </div>
           </div>
@@ -180,25 +185,25 @@ export function HomeClient({ featuredProject }: { featuredProject: any }) {
         <section ref={problemContainerRef} className="h-screen w-full flex items-center bg-[var(--color-graphite)] overflow-hidden relative border-y border-[var(--color-silver)]/30">
           <GridPattern />
           <div className="px-4 md:px-12 absolute top-12 left-0 z-10">
-            <h2 className="font-mono text-[var(--color-silver)]">[ 02 ] THE PROBLEM</h2>
+            <h2 className="font-mono text-[10px] font-normal tracking-[0.3em] uppercase text-[var(--color-silver)]">[ 02 ] THE PROBLEM</h2>
           </div>
           <div ref={problemScrollRef} className="flex gap-12 px-12 items-center h-full whitespace-nowrap pt-24 w-max">
             <div className="w-[80vw] md:w-[50vw] h-[60vh] shrink-0 border border-[var(--color-silver)] flex flex-col justify-center p-12 bg-[var(--color-carbon)] relative group overflow-hidden">
               <span className="font-mono text-[var(--color-acid)] mb-4 flex items-center gap-2"><Target className="w-5 h-5" /> SYMPTOM 01</span>
-              <h3 className="font-cabinet text-5xl md:text-7xl whitespace-normal break-words">Generic Templates</h3>
-              <p className="text-[var(--color-silver)] text-xl mt-4 whitespace-normal break-words max-w-md">Your site looks like your competitors. There is no brand distinction.</p>
+              <h3 className="font-cabinet text-5xl md:text-7xl whitespace-normal break-words">Looks Like Everyone Else</h3>
+              <p className="text-[var(--color-silver)] text-xl mt-4 whitespace-normal break-words max-w-md">Your Webflow site and your competitor's Webflow site are the same Webflow site.</p>
               <Crosshair className="absolute bottom-4 right-4 opacity-50" />
             </div>
             <div className="w-[80vw] md:w-[50vw] h-[60vh] shrink-0 border border-[var(--color-silver)] flex flex-col justify-center p-12 bg-[var(--color-carbon)] relative group overflow-hidden">
               <span className="font-mono text-[var(--color-acid)] mb-4 flex items-center gap-2"><Activity className="w-5 h-5" /> SYMPTOM 02</span>
-              <h3 className="font-cabinet text-5xl md:text-7xl whitespace-normal break-words">Poor Performance</h3>
-              <p className="text-[var(--color-silver)] text-xl mt-4 whitespace-normal break-words max-w-md">Bloated code and heavy unoptimized assets are killing your SEO and bounce rates.</p>
+              <h3 className="font-cabinet text-5xl md:text-7xl whitespace-normal break-words">Slow Where It Hurts</h3>
+              <p className="text-[var(--color-silver)] text-xl mt-4 whitespace-normal break-words max-w-md">Beautiful on desktop. Scores 54 on mobile Lighthouse. That spinner is your first impression.</p>
               <Crosshair className="absolute bottom-4 right-4 opacity-50" />
             </div>
             <div className="w-[80vw] md:w-[50vw] h-[60vh] shrink-0 border border-[var(--color-silver)] flex flex-col justify-center p-12 bg-[var(--color-carbon)] relative group overflow-hidden">
               <span className="font-mono text-[var(--color-acid)] mb-4 flex items-center gap-2"><Zap className="w-5 h-5" /> SYMPTOM 03</span>
-              <h3 className="font-cabinet text-5xl md:text-7xl whitespace-normal break-words">Zero Conversions</h3>
-              <p className="text-[var(--color-silver)] text-xl mt-4 whitespace-normal break-words max-w-md">Traffic comes in, but no one takes action due to a fragmented user journey.</p>
+              <h3 className="font-cabinet text-5xl md:text-7xl whitespace-normal break-words">Built To Be Abandoned</h3>
+              <p className="text-[var(--color-silver)] text-xl mt-4 whitespace-normal break-words max-w-md">Shipped fast, handed over, never touched again. Now you can't change the hero copy without something breaking.</p>
               <Crosshair className="absolute bottom-4 right-4 opacity-50" />
             </div>
           </div>
@@ -210,28 +215,48 @@ export function HomeClient({ featuredProject }: { featuredProject: any }) {
           <div className="absolute inset-y-0 right-48 w-px bg-[var(--color-silver)]/30 hidden md:block" />
           
           <div className="max-w-5xl">
-            <h2 className="font-mono text-[var(--color-silver)] mb-12 flex items-center gap-4">
-              [ 03 ] ABOUT <span className="h-px w-24 bg-[var(--color-silver)] inline-block" />
+            <h2 className="font-mono text-[10px] font-normal tracking-[0.3em] uppercase text-[var(--color-silver)] mb-12 flex items-center gap-4">
+              [ 03 ] WHO <span className="h-px w-24 bg-[var(--color-silver)] inline-block" />
             </h2>
-            <p className="text-reveal font-cabinet text-4xl md:text-7xl leading-[1.1]">
-              Designer. Developer. Problem Solver. <br/>
-              <span className="text-[var(--color-silver)]">I bridge the gap between aesthetics and performance.</span>
+            <p className="text-reveal font-cabinet text-4xl md:text-7xl leading-[1.1] mb-8">
+              CS grad. <br />
+              <span className="text-[var(--color-silver)]">Self-taught on the frontend.</span>
             </p>
+            <div className="text-reveal font-geist text-[18px] leading-[1.7] text-[var(--color-bone)] max-w-3xl space-y-6">
+              <p>I spent the last year obsessing over the part of the web most engineers ignore — how it feels. The micro-interactions, the scroll weight, the thing you can't name but definitely notice.</p>
+              <p>I come from an engineering background, which means I care about performance as much as I care about aesthetics. Your Lighthouse score is not a suggestion.</p>
+              <p>Taking on a small number of projects.<br/>Founders and businesses only.</p>
+            </div>
           </div>
         </section>
 
         {/* [ 04 ] Scene: Services */}
         <section className="min-h-screen flex flex-col justify-center px-4 md:px-12 bg-[var(--color-graphite)] parallax-section border-t border-[var(--color-silver)]/30 relative">
           <GridPattern />
-          <h2 className="font-mono text-[var(--color-silver)] mb-12 relative z-10">[ 04 ] SERVICES</h2>
-          <ul className="w-full text-5xl md:text-8xl font-cabinet flex flex-col gap-0 relative z-10">
-            {["Portfolio", "Business", "UI/UX", "Brand"].map((service, idx) => (
-              <li key={idx} onClick={() => lenis?.scrollTo('#work')} className="group flex items-center justify-between hover:text-[var(--color-acid)] transition-colors cursor-pointer border-b border-[var(--color-silver)]/30 py-8">
-                <span className="text-reveal uppercase">{service}</span>
-                <ArrowRight className="w-12 h-12 opacity-0 -translate-x-8 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500" />
-              </li>
-            ))}
-          </ul>
+          <h2 className="font-mono text-[10px] font-normal tracking-[0.3em] uppercase text-[var(--color-silver)] mb-12 relative z-10">[ 04 ] WHAT I BUILD</h2>
+          <div className="w-full flex flex-col gap-0 relative z-10">
+            <div className="group flex flex-col md:flex-row md:items-center justify-between hover:bg-[var(--color-carbon)] transition-colors border-b border-[var(--color-silver)]/30 py-12 px-4 gap-8">
+              <div className="md:w-1/2">
+                <span className="font-mono text-[10px] tracking-[0.3em] text-[#666] mb-4 block">3–5 PAGES — 3–4 WEEKS</span>
+                <h3 className="font-cabinet text-[28px] font-extrabold uppercase">LAUNCH SITE</h3>
+              </div>
+              <p className="font-geist text-[15px] text-[var(--color-bone)] max-w-md leading-[1.6]">For founders who need the world to take their product seriously on day one. No templates. No Webflow.</p>
+            </div>
+            <div className="group flex flex-col md:flex-row md:items-center justify-between hover:bg-[var(--color-carbon)] transition-colors border-b border-[var(--color-silver)]/30 py-12 px-4 gap-8">
+              <div className="md:w-1/2">
+                <span className="font-mono text-[10px] tracking-[0.3em] text-[#666] mb-4 block">5–8 PAGES — 4–6 WEEKS</span>
+                <h3 className="font-cabinet text-[28px] font-extrabold uppercase">BUSINESS WEBSITE</h3>
+              </div>
+              <p className="font-geist text-[15px] text-[var(--color-bone)] max-w-md leading-[1.6]">For local businesses tired of looking smaller than they are. Custom design, real CMS, no monthly fees.</p>
+            </div>
+            <div className="group flex flex-col md:flex-row md:items-center justify-between hover:bg-[var(--color-carbon)] transition-colors border-b border-[var(--color-silver)]/30 py-12 px-4 gap-8">
+              <div className="md:w-1/2">
+                <span className="font-mono text-[10px] tracking-[0.3em] text-[#666] mb-4 block">SCOPED PER PROJECT</span>
+                <h3 className="font-cabinet text-[28px] font-extrabold uppercase">CUSTOM UI</h3>
+              </div>
+              <p className="font-geist text-[15px] text-[var(--color-bone)] max-w-md leading-[1.6]">Scroll animations, 3D, WebGL. The stuff most devs say yes to and then quietly Google.</p>
+            </div>
+          </div>
         </section>
 
         {/* [ 05 ] Scene: Featured Case Study */}
@@ -254,8 +279,8 @@ export function HomeClient({ featuredProject }: { featuredProject: any }) {
                       className="object-cover transition-transform duration-1000 group-hover:scale-105 opacity-80 mix-blend-luminosity group-hover:mix-blend-normal group-hover:opacity-100"
                     />
                   )}
-                  <div className="absolute inset-0 flex items-center justify-center bg-black/40">
-                    <h3 className="font-cabinet text-6xl md:text-9xl text-[var(--color-bone)] uppercase">{featuredProject.title}</h3>
+                  <div className="sr-only">
+                    <h3>{featuredProject.title}</h3>
                   </div>
                 </div>
 
@@ -305,28 +330,28 @@ export function HomeClient({ featuredProject }: { featuredProject: any }) {
         {/* [ 06 ] Scene: Process */}
         <section ref={processContainerRef} className="min-h-screen flex flex-col md:flex-row items-start px-4 md:px-12 bg-[var(--color-graphite)] border-t border-[var(--color-silver)]/30">
           <div ref={processLeftRef} className="w-full md:w-1/2 h-[50vh] md:h-screen flex items-center pt-32 md:pt-0">
-            <h2 className="font-mono text-[var(--color-silver)] text-2xl md:text-4xl">[ 06 ] THE PROCESS</h2>
+            <h2 className="font-mono text-[10px] font-normal tracking-[0.3em] uppercase text-[var(--color-silver)] md:rotate-90 md:origin-left">[ 06 ] HOW IT WORKS</h2>
           </div>
           <div className="w-full md:w-1/2 flex flex-col gap-[30vh] pt-[20vh] pb-[30vh]">
             <div className="text-reveal border-l border-[var(--color-acid)] pl-8">
-              <span className="font-mono text-[var(--color-acid)]">PHASE 01</span>
-              <h3 className="font-cabinet text-5xl md:text-7xl mb-4 mt-2">Discovery</h3>
-              <p className="text-xl text-[var(--color-silver)]">Auditing the existing ecosystem, defining goals, and establishing the brutalist narrative.</p>
+              <span className="font-mono text-[var(--color-acid)]">01</span>
+              <h3 className="font-cabinet text-5xl md:text-7xl mb-4 mt-2">Understand</h3>
+              <p className="text-xl text-[var(--color-silver)]">One call. What does your business do, who visits the site, what do they need to do when they get there.</p>
             </div>
             <div className="text-reveal border-l border-[var(--color-silver)] pl-8 hover:border-[var(--color-acid)] transition-colors duration-500">
-              <span className="font-mono text-[var(--color-silver)]">PHASE 02</span>
-              <h3 className="font-cabinet text-5xl md:text-7xl mb-4 mt-2">Architecture</h3>
-              <p className="text-xl text-[var(--color-silver)]">Wireframing flows and establishing the Next.js component system.</p>
+              <span className="font-mono text-[var(--color-silver)]">02</span>
+              <h3 className="font-cabinet text-5xl md:text-7xl mb-4 mt-2">Design in Code</h3>
+              <p className="text-xl text-[var(--color-silver)]">I work in the browser, not Figma. You see real progress early, not static mockups.</p>
             </div>
             <div className="text-reveal border-l border-[var(--color-silver)] pl-8 hover:border-[var(--color-acid)] transition-colors duration-500">
-              <span className="font-mono text-[var(--color-silver)]">PHASE 03</span>
-              <h3 className="font-cabinet text-5xl md:text-7xl mb-4 mt-2">Creative Dev</h3>
-              <p className="text-xl text-[var(--color-silver)]">Injecting WebGL, GSAP timelines, and Framer Motion micro-interactions.</p>
+              <span className="font-mono text-[var(--color-silver)]">03</span>
+              <h3 className="font-cabinet text-5xl md:text-7xl mb-4 mt-2">Build</h3>
+              <p className="text-xl text-[var(--color-silver)]">Clean code. Fast loads. Accessible markup. Another dev can pick this up someday and won't hate me for it.</p>
             </div>
             <div className="text-reveal border-l border-[var(--color-silver)] pl-8 hover:border-[var(--color-acid)] transition-colors duration-500">
-              <span className="font-mono text-[var(--color-silver)]">PHASE 04</span>
-              <h3 className="font-cabinet text-5xl md:text-7xl mb-4 mt-2">Launch</h3>
-              <p className="text-xl text-[var(--color-silver)]">Performance optimization, SEO setup, and production deployment.</p>
+              <span className="font-mono text-[var(--color-silver)]">04</span>
+              <h3 className="font-cabinet text-5xl md:text-7xl mb-4 mt-2">Hand Off</h3>
+              <p className="text-xl text-[var(--color-silver)]">Repo, CMS access, Loom walkthrough. Not a black box you're dependent on me to open.</p>
             </div>
           </div>
         </section>
@@ -346,7 +371,7 @@ export function HomeClient({ featuredProject }: { featuredProject: any }) {
         {/* [ 08 ] Scene: Technology */}
         <section className="min-h-screen flex items-center px-4 md:px-12 bg-[var(--color-carbon)] relative">
           <div className="w-full">
-            <h2 className="font-mono text-[var(--color-silver)] mb-12">[ 08 ] TECHNOLOGY</h2>
+            <h2 className="font-mono text-[10px] font-normal tracking-[0.3em] uppercase text-[var(--color-silver)] mb-12">[ 07 ] THE STACK</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-[var(--color-silver)]/30 border border-[var(--color-silver)]/30 font-mono">
               {["Next.js 15", "TypeScript", "Tailwind CSS v4", "shadcn/ui", "GSAP", "Framer Motion", "Lenis", "React Three Fiber"].map((tech, i) => (
                 <div key={i} className="text-reveal bg-[var(--color-carbon)] p-8 flex items-center justify-center h-48 hover:bg-[var(--color-graphite)] hover:border-[var(--color-acid)] border border-transparent transition-all group">
@@ -363,29 +388,32 @@ export function HomeClient({ featuredProject }: { featuredProject: any }) {
         {/* [ 09 ] Scene: Contact */}
         <section id="contact" className="min-h-screen flex flex-col justify-center px-4 md:px-12 py-12 bg-[var(--color-graphite)] parallax-section relative z-20 overflow-hidden">
           <GridPattern />
-          <h2 className="font-mono text-[var(--color-silver)] relative z-10 mb-24">[ 09 ] CONTACT</h2>
+          <h2 className="font-mono text-[10px] font-normal tracking-[0.3em] uppercase text-[var(--color-silver)] relative z-10 mb-24">[ 08 ] LET'S TALK</h2>
           <div className="relative z-10 w-full grid grid-cols-1 md:grid-cols-2 gap-16">
             <div>
-              <h1 className="text-5xl md:text-[6rem] leading-[0.9] tracking-tighter mb-12 uppercase">
-                Let's build something<br/>worth remembering.
+              <h1 className="text-[clamp(40px,6vw,80px)] font-black uppercase font-cabinet leading-[0.9] tracking-tighter mb-8">
+                GOT A PROJECT?
               </h1>
+              <p className="font-geist text-[18px] text-[#666] max-w-md">
+                Tell me what you're building and your rough budget. I'll tell you honestly if I can help.
+              </p>
             </div>
             
             <form className="flex flex-col gap-6 font-mono text-sm" onSubmit={handleFormSubmit}>
               <div className="flex flex-col gap-2">
-                <label className="text-[var(--color-silver)]">NAME</label>
+                <label className="font-mono text-[10px] text-[#555] uppercase tracking-[0.3em]">YOUR NAME</label>
                 <input name="name" required type="text" className="bg-[var(--color-carbon)] border border-[var(--color-silver)]/50 p-4 text-[var(--color-bone)] focus:outline-none focus:border-[var(--color-acid)] rounded-none w-full transition-colors" placeholder="ENTER NAME" />
               </div>
               <div className="flex flex-col gap-2">
-                <label className="text-[var(--color-silver)]">EMAIL</label>
+                <label className="font-mono text-[10px] text-[#555] uppercase tracking-[0.3em]">YOUR EMAIL</label>
                 <input name="email" required type="email" className="bg-[var(--color-carbon)] border border-[var(--color-silver)]/50 p-4 text-[var(--color-bone)] focus:outline-none focus:border-[var(--color-acid)] rounded-none w-full transition-colors" placeholder="ENTER EMAIL" />
               </div>
               <div className="flex flex-col gap-2">
-                <label className="text-[var(--color-silver)]">PROJECT DETAILS</label>
+                <label className="font-mono text-[10px] text-[#555] uppercase tracking-[0.3em]">PROJECT DETAILS</label>
                 <textarea name="details" required className="bg-[var(--color-carbon)] border border-[var(--color-silver)]/50 p-4 text-[var(--color-bone)] focus:outline-none focus:border-[var(--color-acid)] rounded-none w-full h-32 resize-none transition-colors" placeholder="DESCRIBE YOUR PROJECT"></textarea>
               </div>
               <div className="flex flex-col gap-2">
-                <label className="text-[var(--color-silver)]">BUDGET</label>
+                <label className="font-mono text-[10px] text-[#555] uppercase tracking-[0.3em]">BUDGET RANGE</label>
                 <select name="budget" className="bg-[var(--color-carbon)] border border-[var(--color-silver)]/50 p-4 text-[var(--color-bone)] focus:outline-none focus:border-[var(--color-acid)] rounded-none w-full transition-colors appearance-none">
                   <option>$10k - $25k</option>
                   <option>$25k - $50k</option>
@@ -395,8 +423,8 @@ export function HomeClient({ featuredProject }: { featuredProject: any }) {
               <div className="mt-4">
                 <button type="submit" disabled={isPending} className="relative flex items-center justify-center bg-[var(--color-acid)] px-8 py-4 text-sm font-bold uppercase tracking-widest text-[var(--color-carbon)] w-full hover:bg-[var(--color-bone)] transition-colors disabled:opacity-50">
                   <span className="flex items-center gap-2">
-                    {isPending ? "TRANSMITTING..." : formStatus === "success" ? "TRANSMISSION SENT" : formStatus === "error" ? "ERROR. RETRY." : "Initiate Transmission"} 
-                    <ArrowUpRight className="w-5 h-5" />
+                    {isPending ? "TRANSMITTING..." : formStatus === "success" ? "TRANSMISSION SENT" : formStatus === "error" ? "ERROR. RETRY." : "Send it"} 
+                    <ArrowRight className="w-5 h-5" />
                   </span>
                 </button>
               </div>
@@ -404,13 +432,12 @@ export function HomeClient({ featuredProject }: { featuredProject: any }) {
           </div>
           
           <div className="flex flex-col md:flex-row gap-8 items-end justify-between border-t border-[var(--color-silver)]/50 pt-8 mt-16 relative z-10">
-            <div className="font-mono text-[var(--color-silver)]">
-              © {new Date().getFullYear()} Preetham <br/>
-              <span className="text-[var(--color-bone)]">PREMIUM DIGITAL ARCHITECTURE</span>
+            <div className="font-mono text-[10px] text-[#333] uppercase">
+              BUILT BY HAND IN BANGALORE. NO TEMPLATES WERE HARMED.
             </div>
-            <MagneticButton onClick={() => window.scrollTo(0, 0)} className="bg-[var(--color-carbon)] border border-[var(--color-silver)]/50 text-[var(--color-bone)]">
-              Back to top
-            </MagneticButton>
+            <div className="font-mono text-[10px] text-[var(--color-bone)] uppercase tracking-widest">
+              © {new Date().getFullYear()} PREETHAM ANANTHU
+            </div>
           </div>
         </section>
       </div>

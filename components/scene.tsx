@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Environment, Float, MeshDistortMaterial, Sphere } from "@react-three/drei";
 import * as THREE from "three";
@@ -58,7 +58,9 @@ export function Scene() {
         <ambientLight intensity={0.5} />
         <directionalLight position={[10, 10, 5]} intensity={1} />
         <Monolith />
-        <Environment preset="city" />
+        <Suspense fallback={null}>
+          <Environment preset="city" />
+        </Suspense>
       </Canvas>
     </div>
   );

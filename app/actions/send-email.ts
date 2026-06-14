@@ -20,7 +20,7 @@ function getEmailHtml(name: string, email: string, budget: string, details: stri
 
   <!-- HEADER -->
   <tr><td style="background:#0d0d0d;border-bottom:1px solid #2a2a2a;padding:36px 40px;">
-    <p style="margin:0 0 16px;font-family:'Courier New',monospace;font-size:9px;letter-spacing:0.35em;color:#555;text-transform:uppercase;">PREETHAM.COM — PORTFOLIO</p>
+    <p style="margin:0 0 16px;font-family:'Courier New',monospace;font-size:9px;letter-spacing:0.35em;color:#555;text-transform:uppercase;">PREETHAM-ANANTHU.VERCEL.APP — PORTFOLIO</p>
     <span style="display:inline-block;background:#D4FF00;color:#030303;font-family:'Courier New',monospace;font-size:9px;font-weight:700;letter-spacing:0.25em;text-transform:uppercase;padding:5px 12px;margin-bottom:20px;">⬤ NEW REQUEST</span>
     <h1 style="margin:0;font-size:40px;font-weight:800;color:#F5F5F5;text-transform:uppercase;letter-spacing:-0.03em;line-height:1.0;font-family:Arial Black,Arial,sans-serif;">NEW<br/>PROJECT<br/><span style="color:#D4FF00;">INQUIRY</span></h1>
   </td></tr>
