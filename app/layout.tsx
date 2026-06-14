@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Geist, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import { LenisProvider } from "@/components/lenis-provider";
+import { Navigation } from "@/components/navigation";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const geist = Geist({
   variable: "--font-geist",
@@ -15,8 +18,12 @@ const ibmMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Preetham | Designer. Developer. Problem Solver.",
+  title: {
+    template: "%s | Preetham",
+    default: "Preetham | Premium Digital Architecture",
+  },
   description: "Most business websites are forgettable. I build websites businesses remember.",
+  keywords: ["Frontend Architect", "Next.js", "Creative Developer", "WebGL", "GSAP", "Brutalist Design"],
 };
 
 export default function RootLayout({
@@ -47,7 +54,12 @@ export default function RootLayout({
         />
       </head>
       <body suppressHydrationWarning className="min-h-screen flex flex-col selection:bg-[var(--color-acid)] selection:text-[var(--color-carbon)]">
-        <LenisProvider>{children}</LenisProvider>
+        <LenisProvider>
+          <Navigation />
+          {children}
+        </LenisProvider>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
